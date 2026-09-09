@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import PageHeader from '../components/PageHeader';
 
 const workingHours = [
   { day: 'Monday', hours: '09 AM - 09 PM', status: 'Open' },
@@ -29,9 +28,7 @@ export default function Contact() {
   };
 
   return (
-    <>
-      <PageHeader title="Contact Us" category="" />
-
+    <div className="pt-4">
       <div className="container-xxl py-5">
         <div className="container">
           {/* Quick Contact & Opening Hours Summary Cards */}
@@ -199,6 +196,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom';
-import PageHeader from '../components/PageHeader';
 
 export default function NotFound() {
   return (
-    <>
-      <PageHeader title="404 Error" category="Pages" />
+    <div className="pt-4">
       <div className="container-xxl py-5">
         <div className="container text-center py-5 bg-white shadow-sm border rounded">
           <div className="row justify-content-center">
@@ -15,13 +13,13 @@ export default function NotFound() {
               <p className="mb-4 text-secondary">
                 We're sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?
               </p>
-              <Link className="btn btn-primary py-3 px-5 text-uppercase font-weight-bold" to="/">
+              <Link className="btn btn-primary py-3 px-5 text-uppercase font-weight-bold rounded-pill" to="/">
                 Go Back To Home
               </Link>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

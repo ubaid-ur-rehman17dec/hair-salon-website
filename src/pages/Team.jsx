@@ -1,11 +1,9 @@
-import PageHeader from '../components/PageHeader';
 import TeamSection from '../components/TeamSection';
 
 export default function Team() {
   return (
-    <>
-      <PageHeader title="Our Barber" category="Pages" />
+    <div className="pt-4">
       <TeamSection />
-    </>
+    </div>
   );
 }
