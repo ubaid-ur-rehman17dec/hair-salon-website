@@ -1,5 +1,5 @@
-@import "../css/bootstrap.min.css";
-@import "../css/style.css";
+@import "./styles/bootstrap.min.css";
+@import "./styles/style.css";
 
 /* Light Theme Variables Override */
 :root {
