@@ -1,30 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 export default function Navbar({ onOpenAppointment }) {
-  const [isSticky, setIsSticky] = useState(false);
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const handleNavClick = () => {
     setIsNavCollapsed(true);
   };
 
   return (
-    <header className="sticky-top">
-      {/* Top Contact Bar */}
+    <>
+      {/* Top Contact Bar (Normal flow, scrolls out smoothly) */}
       <div className="bg-dark text-light py-2 px-lg-5 d-none d-lg-block border-bottom border-secondary border-opacity-25">
         <div className="container-fluid">
           <div className="row align-items-center">
@@ -58,8 +44,8 @@ export default function Navbar({ onOpenAppointment }) {
         </div>
       </div>
 
-      {/* Main Navbar */}
-      <nav className={`navbar navbar-expand-lg bg-white navbar-light py-lg-0 px-lg-5 transition-all ${isSticky ? 'shadow-sm py-2' : 'py-3'}`}>
+      {/* Main Sticky Navbar (Rock-solid, zero height shifts, zero blinking) */}
+      <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top shadow-sm py-lg-0 px-lg-5">
         <Link to="/" className="navbar-brand ms-4 ms-lg-0" onClick={handleNavClick}>
           <h1 className="mb-0 text-primary text-uppercase font-weight-bold d-flex align-items-center fs-2">
             <i className="fa fa-cut me-3"></i>HairCut
@@ -136,6 +122,6 @@ export default function Navbar({ onOpenAppointment }) {
           </button>
         </div>
       </nav>
-    </header>
+    </>
   );
 }
