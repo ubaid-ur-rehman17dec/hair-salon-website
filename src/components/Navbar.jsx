@@ -16,40 +16,54 @@ export default function Navbar({ onOpenAppointment }) {
           <div className="row align-items-center">
             <div className="col-md-8">
               <div className="d-flex align-items-center gap-4 small">
-                <span>
+                <a 
+                  href="https://maps.app.goo.gl/DfySr7pThQS1V1jq9?g_st=aw" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-light text-decoration-none hover-primary"
+                >
                   <i className="fa fa-map-marker-alt text-primary me-2"></i>
-                  123 Street, New York, USA
-                </span>
-                <span>
+                  Find Us On Google Maps
+                </a>
+                <a 
+                  href="tel:03004155932" 
+                  className="text-light text-decoration-none hover-primary"
+                >
                   <i className="fa fa-phone-alt text-primary me-2"></i>
-                  +012 345 67890
-                </span>
+                  0300 4155932
+                </a>
                 <span>
                   <i className="fa fa-clock text-primary me-2"></i>
-                  Mon - Fri: 09 AM - 09 PM
+                  Mon - Sun: 09 AM - 10 PM
                 </span>
               </div>
             </div>
             <div className="col-md-4 text-end">
               <div className="d-inline-flex align-items-center gap-3">
-                <span className="badge bg-success px-2 py-1 small">
+                <span className="badge bg-success px-2 py-1 small me-2">
                   <i className="fa fa-circle fs-6 me-1 animate-pulse"></i> OPEN NOW
                 </span>
-                <a className="text-light hover-primary" href="#!" aria-label="TikTok"><i className="fab fa-tiktok"></i></a>
-                <a className="text-light hover-primary" href="#!" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-                <a className="text-light hover-primary" href="#!" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+                <a className="social-icon-real social-tiktok ms-1" href="https://www.tiktok.com/@20scissorart5?_r=1&_t=ZS-99fxgufIzjd" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><i className="fab fa-tiktok"></i></a>
+                <a className="social-icon-real social-facebook" href="https://www.facebook.com/share/1MBG7yLNtc/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i className="fab fa-facebook-f"></i></a>
+                <a className="social-icon-real social-whatsapp" href="https://wa.me/923004155932" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><i className="fab fa-whatsapp"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Main Sticky Navbar (Rock-solid, zero height shifts, zero blinking) */}
+      {/* Main Sticky Navbar */}
       <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top shadow-sm py-lg-0 px-lg-5">
-        <Link to="/" className="navbar-brand ms-4 ms-lg-0" onClick={handleNavClick}>
-          <h1 className="mb-0 text-primary text-uppercase font-weight-bold d-flex align-items-center fs-2">
-            <i className="fa fa-cut me-3"></i>HairCut
-          </h1>
+        <Link to="/" className="navbar-brand ms-4 ms-lg-0 d-flex align-items-center" onClick={handleNavClick}>
+          <img src="/img/logo.jpg" alt="20 SCISSOR ART Logo" style={{ height: '48px', width: 'auto', borderRadius: '6px' }} className="me-2 shadow-sm border border-gold" />
+          <div>
+            <h1 className="mb-0 text-primary text-uppercase font-weight-bold fs-3 lh-1">
+              20 SCISSOR ART
+            </h1>
+            <span className="text-dark small tracking-wider text-uppercase font-weight-bold d-block style-subtext" style={{ fontSize: '0.65rem', letterSpacing: '1px' }}>
+              Ladies & Gents Salon
+            </span>
+          </div>
         </Link>
         <button 
           type="button" 
@@ -86,11 +100,11 @@ export default function Navbar({ onOpenAppointment }) {
               Service
             </NavLink>
             <NavLink 
-              to="/price" 
+              to="/gallery" 
               className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
               onClick={handleNavClick}
             >
-              Pricing
+              Gallery
             </NavLink>
             <NavLink 
               to="/team" 
@@ -113,6 +127,14 @@ export default function Navbar({ onOpenAppointment }) {
             >
               Contact
             </NavLink>
+
+            {/* Mobile Social Links Bar */}
+            <div className="d-flex d-lg-none align-items-center gap-3 mt-3 pt-3 border-top border-secondary border-opacity-25 w-100 justify-content-center">
+              <span className="small text-muted font-weight-bold me-1">Follow Us:</span>
+              <a className="social-icon-real social-tiktok" href="https://www.tiktok.com/@20scissorart5?_r=1&_t=ZS-99fxgufIzjd" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><i className="fab fa-tiktok"></i></a>
+              <a className="social-icon-real social-facebook" href="https://www.facebook.com/share/1MBG7yLNtc/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i className="fab fa-facebook-f"></i></a>
+              <a className="social-icon-real social-whatsapp" href="https://wa.me/923004155932" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><i className="fab fa-whatsapp"></i></a>
+            </div>
           </div>
           <button 
             onClick={onOpenAppointment}

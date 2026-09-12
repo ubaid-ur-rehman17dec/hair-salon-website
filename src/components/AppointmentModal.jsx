@@ -63,7 +63,7 @@ export default function AppointmentModal({ isOpen, onClose }) {
                   <input 
                     type="tel" 
                     className="form-control" 
-                    placeholder="+1 234 567 890" 
+                    placeholder="0300 4155932" 
                     required 
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -78,18 +78,18 @@ export default function AppointmentModal({ isOpen, onClose }) {
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     >
                       <optgroup label="-- Gents Services --">
-                        <option value="Gents Haircut">Gents Haircut ($15)</option>
-                        <option value="Beard Trim & Shape">Beard Trim & Shape ($15)</option>
-                        <option value="Hot Towel Mans Shave">Hot Towel Shave ($15)</option>
-                        <option value="Gents Hair Color">Gents Hair & Beard Color ($20)</option>
+                        <option value="Gents Haircut">Gents Haircut</option>
+                        <option value="Beard Trim & Shape">Beard Trim & Shape</option>
+                        <option value="Hot Towel Mans Shave">Hot Towel Shave</option>
+                        <option value="Gents Hair Color">Gents Hair & Beard Color</option>
                       </optgroup>
                       <optgroup label="-- Ladies Services --">
-                        <option value="Bridal Makeup & Package">Bridal Makeup & Package ($85)</option>
-                        <option value="Ladies Haircut & Blowdry">Ladies Haircut ($25)</option>
-                        <option value="Party & Event Makeup">Party & Event Makeup ($45)</option>
-                        <option value="Facial & Skin Care">Facial & Skin Care ($35)</option>
-                        <option value="Hair Color & Highlights">Hair Color & Highlights ($50)</option>
-                        <option value="Manicure & Pedicure">Manicure & Pedicure ($30)</option>
+                        <option value="Bridal Makeup & Package">Bridal Makeup & Package</option>
+                        <option value="Ladies Haircut & Blowdry">Ladies Haircut</option>
+                        <option value="Party & Event Makeup">Party & Event Makeup</option>
+                        <option value="Facial & Skin Care">Facial & Skin Care</option>
+                        <option value="Hair Color & Highlights">Hair Color & Highlights</option>
+                        <option value="Manicure & Pedicure">Manicure & Pedicure</option>
                       </optgroup>
                     </select>
                   </div>
@@ -100,10 +100,9 @@ export default function AppointmentModal({ isOpen, onClose }) {
                       value={formData.barber}
                       onChange={(e) => setFormData({ ...formData, barber: e.target.value })}
                     >
-                      <option value="Barber Master (Gents)">Barber Master (Gents)</option>
-                      <option value="Bridal & Makeup Artist (Ladies)">Bridal & Makeup Artist (Ladies)</option>
-                      <option value="Senior Hair Specialist">Senior Hair Specialist</option>
-                      <option value="Beard & Skin Expert">Beard & Skin Expert</option>
+                      <option value="Muhammad Shabir (CEO & Master Barber)">Muhammad Shabir (CEO & Master Barber)</option>
+                      <option value="Muhammad Taha (Senior Hair Stylist)">Muhammad Taha (Senior Hair Stylist)</option>
+                      <option value="Waseem Rasheed (Beard Specialist)">Waseem Rasheed (Beard Specialist)</option>
                     </select>
                   </div>
                 </div>

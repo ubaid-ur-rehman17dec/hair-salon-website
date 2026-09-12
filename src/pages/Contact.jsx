@@ -1,12 +1,9 @@
 import { useState } from 'react';
 
 const workingHours = [
-  { day: 'Monday', hours: '09 AM - 09 PM', status: 'Open' },
-  { day: 'Tuesday', hours: '09 AM - 09 PM', status: 'Open' },
-  { day: 'Wednesday', hours: '09 AM - 09 PM', status: 'Open' },
-  { day: 'Thursday', hours: '09 AM - 09 PM', status: 'Open' },
-  { day: 'Friday', hours: '09 AM - 09 PM', status: 'Open' },
-  { day: 'Sat / Sun', hours: 'Closed', status: 'Closed' }
+  { day: 'Monday - Thursday', hours: '09 AM - 10 PM', status: 'Open' },
+  { day: 'Friday', hours: '02 PM - 10 PM', status: 'Open' },
+  { day: 'Saturday - Sunday', hours: '09 AM - 10 PM', status: 'Open' }
 ];
 
 export default function Contact() {
@@ -34,37 +31,46 @@ export default function Contact() {
           {/* Quick Contact & Opening Hours Summary Cards */}
           <div className="row g-4 mb-5">
             <div className="col-lg-4 col-md-6">
-              <div className="bg-white p-4 shadow-sm border rounded h-100 d-flex align-items-center">
-                <div className="btn-square bg-primary text-white rounded-circle flex-shrink-0 me-3" style={{ width: '54px', height: '54px' }}>
-                  <i className="fa fa-map-marker-alt fs-4"></i>
+              <a 
+                href="https://maps.app.goo.gl/DfySr7pThQS1V1jq9?g_st=aw" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-decoration-none"
+              >
+                <div className="bg-white p-4 shadow-sm border rounded h-100 d-flex align-items-center hover-lift">
+                  <div className="btn-square bg-primary text-white rounded-circle flex-shrink-0 me-3" style={{ width: '54px', height: '54px' }}>
+                    <i className="fa fa-map-marker-alt fs-4"></i>
+                  </div>
+                  <div>
+                    <h6 className="text-uppercase mb-1 text-dark font-weight-bold">Google Maps Location</h6>
+                    <span className="text-primary small font-weight-bold">Click to Open Directions <i className="fa fa-external-link-alt ms-1"></i></span>
+                  </div>
                 </div>
-                <div>
-                  <h6 className="text-uppercase mb-1 text-dark font-weight-bold">Visit Our Salon</h6>
-                  <span className="text-muted small">123 Street, New York, USA</span>
-                </div>
-              </div>
+              </a>
             </div>
 
             <div className="col-lg-4 col-md-6">
-              <div className="bg-white p-4 shadow-sm border rounded h-100 d-flex align-items-center">
-                <div className="btn-square bg-primary text-white rounded-circle flex-shrink-0 me-3" style={{ width: '54px', height: '54px' }}>
-                  <i className="fa fa-phone-alt fs-4"></i>
+              <a href="tel:03004155932" className="text-decoration-none">
+                <div className="bg-white p-4 shadow-sm border rounded h-100 d-flex align-items-center hover-lift">
+                  <div className="btn-square bg-primary text-white rounded-circle flex-shrink-0 me-3" style={{ width: '54px', height: '54px' }}>
+                    <i className="fa fa-phone-alt fs-4"></i>
+                  </div>
+                  <div>
+                    <h6 className="text-uppercase mb-1 text-dark font-weight-bold">Call Us Direct</h6>
+                    <span className="text-primary font-weight-bold">0300 4155932</span>
+                  </div>
                 </div>
-                <div>
-                  <h6 className="text-uppercase mb-1 text-dark font-weight-bold">Call Us Direct</h6>
-                  <span className="text-muted small">+012 345 67890</span>
-                </div>
-              </div>
+              </a>
             </div>
 
             <div className="col-lg-4 col-md-12">
               <div className="bg-white p-4 shadow-sm border rounded h-100 d-flex align-items-center">
-                <div className="btn-square bg-danger text-white rounded-circle flex-shrink-0 me-3" style={{ width: '54px', height: '54px' }}>
-                  <i className="fa fa-clock fs-4"></i>
+                <div className="btn-square bg-dark text-primary rounded-circle flex-shrink-0 me-3" style={{ width: '54px', height: '54px' }}>
+                  <i className="fa fa-user-tie fs-4"></i>
                 </div>
                 <div>
-                  <h6 className="text-uppercase mb-1 text-dark font-weight-bold">Salon Working Hours</h6>
-                  <span className="text-muted small">Mon - Fri: 09 AM - 09 PM (Sat/Sun Closed)</span>
+                  <h6 className="text-uppercase mb-1 text-dark font-weight-bold">CEO & Staff</h6>
+                  <span className="text-muted small">CEO: Muhammad Shabir | Staff: Muhammad Taha & Waseem Rasheed</span>
                 </div>
               </div>
             </div>
@@ -180,16 +186,21 @@ export default function Contact() {
                   </div>
                 </div>
 
-                {/* Google Map */}
-                <div className="flex-grow-1 shadow-sm border rounded overflow-hidden" style={{ minHeight: '220px' }}>
-                  <iframe 
-                    className="google-map w-100 h-100"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                    title="Google Map"
-                    style={{ border: 0, minHeight: '220px' }}
-                    allowFullScreen=""
-                    loading="lazy"
-                  ></iframe>
+                {/* Google Map & Directions Card */}
+                <div className="bg-primary text-white p-4 shadow border rounded d-flex flex-column align-items-center justify-content-center text-center position-relative overflow-hidden" style={{ minHeight: '220px', backgroundImage: 'radial-gradient(circle, rgba(212,175,55,0.2) 0%, rgba(26,26,26,1) 100%)' }}>
+                  <i className="fa fa-map-marked-alt text-primary display-4 mb-3"></i>
+                  <h4 className="text-uppercase text-white font-weight-bold mb-2">20 SCISSOR ART Location</h4>
+                  <p className="small text-light opacity-75 mb-3 px-3">
+                    Click below to open our exact location on Google Maps for GPS navigation & directions.
+                  </p>
+                  <a 
+                    href="https://maps.app.goo.gl/DfySr7pThQS1V1jq9?g_st=aw" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="btn btn-primary text-uppercase font-weight-bold py-3 px-4 rounded-pill shadow hover-lift border-0"
+                  >
+                    Open Location On Google Maps <i className="fa fa-external-link-alt ms-2"></i>
+                  </a>
                 </div>
               </div>
             </div>

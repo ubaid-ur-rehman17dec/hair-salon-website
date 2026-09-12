@@ -6,24 +6,42 @@ export default function Footer() {
       <div className="container py-5">
         <div className="row g-5">
           <div className="col-lg-4 col-md-6">
-            <h4 className="text-uppercase mb-4">Get In Touch</h4>
+            <div className="d-flex align-items-center mb-3">
+              <img src="/img/logo.jpg" alt="20 SCISSOR ART Logo" style={{ height: '55px', width: 'auto', borderRadius: '8px' }} className="me-3 border border-warning shadow-sm" />
+              <div>
+                <h4 className="text-uppercase mb-0 text-primary font-weight-bold">20 SCISSOR ART</h4>
+                <span className="small text-muted text-uppercase tracking-wider">Ladies & Gents Salon</span>
+              </div>
+            </div>
+            <p className="small text-light opacity-75 mb-3">
+              Premier Ladies & Gents Salon founded by CEO Muhammad Shabir. Master hair styling, beard sculpts, facials, and beauty services.
+            </p>
             <div className="d-flex align-items-center mb-3">
               <div className="btn-square bg-dark flex-shrink-0 me-3">
                 <span className="fa fa-map-marker-alt text-primary"></span>
               </div>
-              <span>123 Street, New York, USA</span>
+              <a 
+                href="https://maps.app.goo.gl/DfySr7pThQS1V1jq9?g_st=aw" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-light text-decoration-none hover-primary"
+              >
+                Find Us On Google Maps
+              </a>
             </div>
             <div className="d-flex align-items-center mb-3">
               <div className="btn-square bg-dark flex-shrink-0 me-3">
                 <span className="fa fa-phone-alt text-primary"></span>
               </div>
-              <span>+012 345 67890</span>
+              <a href="tel:03004155932" className="text-light text-decoration-none hover-primary">
+                0300 4155932
+              </a>
             </div>
             <div className="d-flex align-items-center">
               <div className="btn-square bg-dark flex-shrink-0 me-3">
-                <span className="fa fa-envelope-open text-primary"></span>
+                <span className="fa fa-user-tie text-primary"></span>
               </div>
-              <span>info@example.com</span>
+              <span>CEO: Muhammad Shabir</span>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
@@ -31,29 +49,18 @@ export default function Footer() {
             <Link className="btn btn-link text-decoration-none" to="/about">About Us</Link>
             <Link className="btn btn-link text-decoration-none" to="/contact">Contact Us</Link>
             <Link className="btn btn-link text-decoration-none" to="/service">Our Services</Link>
-            <Link className="btn btn-link text-decoration-none" to="/price">Pricing Plan</Link>
+            <Link className="btn btn-link text-decoration-none" to="/gallery">Salon Gallery</Link>
             <Link className="btn btn-link text-decoration-none" to="/team">Our Experts</Link>
           </div>
           <div className="col-lg-4 col-md-6">
-            <h4 className="text-uppercase mb-4">Newsletter</h4>
-            <div className="position-relative mb-4">
-              <input 
-                className="form-control border-0 w-100 py-3 ps-4 pe-5 bg-dark text-white" 
-                type="text" 
-                placeholder="Your email"
-              />
-              <button 
-                type="button" 
-                className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                SignUp
-              </button>
-            </div>
-            <div className="d-flex pt-1 m-n1">
-              <a className="btn btn-lg-square btn-dark text-primary m-1" href="#!" aria-label="TikTok"><i className="fab fa-tiktok"></i></a>
-              <a className="btn btn-lg-square btn-dark text-primary m-1" href="#!" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-              <a className="btn btn-lg-square btn-dark text-primary m-1" href="#!" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
-              <a className="btn btn-lg-square btn-dark text-primary m-1" href="#!" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+            <h4 className="text-uppercase mb-4">Follow Us</h4>
+            <p className="small text-light opacity-75 mb-3">
+              Connect with 20 SCISSOR ART on TikTok, Facebook & WhatsApp for latest hairstyles, customer transformation videos & appointments!
+            </p>
+            <div className="d-flex pt-1 gap-3">
+              <a className="social-icon-real social-tiktok" href="https://www.tiktok.com/@20scissorart5?_r=1&_t=ZS-99fxgufIzjd" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><i className="fab fa-tiktok"></i></a>
+              <a className="social-icon-real social-facebook" href="https://www.facebook.com/share/1MBG7yLNtc/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><i className="fab fa-facebook-f"></i></a>
+              <a className="social-icon-real social-whatsapp" href="https://wa.me/923004155932" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><i className="fab fa-whatsapp"></i></a>
             </div>
           </div>
         </div>
@@ -62,10 +69,10 @@ export default function Footer() {
         <div className="copyright">
           <div className="row">
             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <Link className="border-bottom text-decoration-none" to="/">HairCut Salon</Link>, All Right Reserved.
+              &copy; <Link className="border-bottom text-decoration-none" to="/">20 SCISSOR ART</Link>, All Right Reserved.
             </div>
             <div className="col-md-6 text-center text-md-end">
-              Designed By <a className="border-bottom text-decoration-none" href="https://htmlcodex.com" target="_blank" rel="noopener noreferrer">HTML Codex</a>
+              CEO Muhammad Shabir | Staff: Muhammad Taha & Waseem Rasheed
             </div>
           </div>
         </div>

@@ -232,3 +232,111 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
+
+/* Gallery Card Item Styles */
+.gallery-card-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+}
+
+.gallery-card-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18) !important;
+}
+
+.gallery-card-item .gallery-img-wrap {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  background-color: #191c24;
+}
+
+.gallery-card-item .gallery-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-card-item:hover .gallery-img-wrap img {
+  transform: scale(1.08);
+}
+
+.gallery-card-item .gallery-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.35s ease;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.gallery-card-item:hover .gallery-hover-overlay {
+  opacity: 1;
+}
+
+/* Authentic Brand Social Media Buttons */
+.social-icon-real {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-decoration: none !important;
+  font-size: 1.15rem;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon-real:hover {
+  transform: translateY(-3px) scale(1.12);
+}
+
+/* TikTok Authentic Styling */
+.social-tiktok {
+  background: #000000;
+  color: #ffffff !important;
+  border: 1px solid #333;
+  box-shadow: -2px 2px 8px rgba(254, 44, 85, 0.4), 2px -2px 8px rgba(37, 244, 238, 0.4);
+}
+
+.social-tiktok:hover {
+  box-shadow: -3px 3px 14px rgba(254, 44, 85, 0.8), 3px -3px 14px rgba(37, 244, 238, 0.8);
+}
+
+/* Facebook Authentic Styling */
+.social-facebook {
+  background: #1877F2;
+  color: #ffffff !important;
+}
+
+.social-facebook:hover {
+  box-shadow: 0 6px 16px rgba(24, 119, 242, 0.5);
+}
+
+/* WhatsApp Authentic Styling */
+.social-whatsapp {
+  background: #25D366;
+  color: #ffffff !important;
+}
+
+.social-whatsapp:hover {
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.5);
+}
+
+

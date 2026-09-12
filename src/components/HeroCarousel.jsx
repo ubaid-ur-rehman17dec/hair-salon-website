@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 const slides = [
   {
     image: '/img/carousel-1.jpg',
-    badge: 'Premier Unisex Salon',
-    title: 'We Will Keep You An Awesome Look',
-    subtitle: 'Expert Grooming for Gents & Luxury Beauty for Ladies',
-    location: '123 Street, New York, USA',
-    phone: '+012 345 67890'
+    badge: 'Premier Ladies & Gents Salon',
+    title: '20 SCISSOR ART',
+    subtitle: 'Led by CEO Muhammad Shabir | Expert Styling by Muhammad Taha & Waseem Rasheed',
+    location: 'Find us on Google Maps',
+    phone: '0300 4155932'
   },
   {
     image: '/img/carousel-2.jpg',
-    badge: 'Luxury Beauty & Bridal Spa',
-    title: 'Luxury Haircut & Styling at Affordable Prices',
-    subtitle: 'HD Bridal Makeup, Facials, Hair Coloring & Barbering',
-    location: '123 Street, New York, USA',
-    phone: '+012 345 67890'
+    badge: 'Luxury Grooming & Beauty',
+    title: 'Precision Cut & Styling Artistry',
+    subtitle: 'Top-Class Barbering, Hair Styling, Facials & Beauty Services for Gents & Ladies',
+    location: 'Find us on Google Maps',
+    phone: '0300 4155932'
   }
 ];
 

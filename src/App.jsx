@@ -10,6 +10,7 @@ import AppointmentModal from './components/AppointmentModal';
 import Home from './pages/Home';
 import About from './pages/About';
 import Service from './pages/Service';
+import Gallery from './pages/Gallery';
 import Price from './pages/Price';
 import Team from './pages/Team';
 import Open from './pages/Open';
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/" element={<Home onOpenAppointment={handleOpenAppointment} />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service onOpenAppointment={handleOpenAppointment} />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/price" element={<Price />} />
           <Route path="/team" element={<Team />} />
           <Route path="/open" element={<Open />} />
