@@ -1,19 +1,19 @@
 const gentsPrices = [
-  { service: 'Gents Haircut', price: '$29.00' },
-  { service: 'Beard Trim & Shape', price: '$15.00' },
-  { service: 'Hot Towel Mans Shave', price: '$23.00' },
-  { service: 'Hair & Beard Dyeing', price: '$19.00' },
-  { service: 'Mustache Styling', price: '$15.00' },
-  { service: 'Stacking & Styling', price: '$39.00' }
+  { service: 'Gents Haircut', price: 'Rs. 2,900' },
+  { service: 'Beard Trim & Shape', price: 'Rs. 1,500' },
+  { service: 'Hot Towel Mans Shave', price: 'Rs. 2,300' },
+  { service: 'Hair & Beard Dyeing', price: 'Rs. 1,900' },
+  { service: 'Mustache Styling', price: 'Rs. 1,500' },
+  { service: 'Stacking & Styling', price: 'Rs. 3,900' }
 ];
 
 const ladiesPrices = [
-  { service: 'Bridal Makeup & Package', price: '$85.00' },
-  { service: 'Ladies Haircut & Blowdry', price: '$25.00' },
-  { service: 'Party & Event Makeup', price: '$45.00' },
-  { service: 'Facial & Glow Care Treatment', price: '$35.00' },
-  { service: 'Hair Coloring & Balayage', price: '$50.00' },
-  { service: 'Manicure & Pedicure Spa', price: '$30.00' }
+  { service: 'Bridal Makeup & Package', price: 'Rs. 8,500' },
+  { service: 'Ladies Haircut & Blowdry', price: 'Rs. 2,500' },
+  { service: 'Party & Event Makeup', price: 'Rs. 4,500' },
+  { service: 'Facial & Glow Care Treatment', price: 'Rs. 3,500' },
+  { service: 'Hair Coloring & Balayage', price: 'Rs. 5,000' },
+  { service: 'Manicure & Pedicure Spa', price: 'Rs. 3,000' }
 ];
 
 export default function PriceSection() {

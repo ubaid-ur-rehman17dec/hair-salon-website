@@ -7,7 +7,7 @@ const allServices = [
     icon: '/img/haircut.png',
     bgImage: '/img/carousel-1.jpg',
     title: 'Gents Haircut',
-    price: 'From $15',
+    price: 'From Rs. 1,500',
     description: 'Precision haircut, hair wash, scalp massage, and custom styling by master barbers.'
   },
   {
@@ -15,7 +15,7 @@ const allServices = [
     icon: '/img/beard-trim.png',
     bgImage: '/img/carousel-2.jpg',
     title: 'Beard Trim & Shape',
-    price: 'From $15',
+    price: 'From Rs. 1,500',
     description: 'Professional beard sculpting, line-up, hot towel treatment, and beard oil nourishment.'
   },
   {
@@ -23,7 +23,7 @@ const allServices = [
     icon: '/img/mans-shave.png',
     bgImage: '/img/about.jpg',
     title: 'Hot Towel Mans Shave',
-    price: 'From $15',
+    price: 'From Rs. 1,500',
     description: 'Classic straight-razor shave with warm lather, hot towels, and soothing balm.'
   },
   {
@@ -31,7 +31,7 @@ const allServices = [
     icon: '/img/hair-dyeing.png',
     bgImage: '/img/price.jpg',
     title: 'Gents Hair & Beard Color',
-    price: 'From $20',
+    price: 'From Rs. 2,000',
     description: 'Natural grey blending or vibrant custom hair and beard coloring.'
   },
   {
@@ -39,7 +39,7 @@ const allServices = [
     icon: '/img/mustache.png',
     bgImage: '/img/open.jpg',
     title: 'Mustache Styling',
-    price: 'From $10',
+    price: 'From Rs. 1,000',
     description: 'Detailed mustache trimming, shaping, wax styling, and edge alignment.'
   },
   {
@@ -47,7 +47,7 @@ const allServices = [
     icon: '/img/stacking.png',
     bgImage: '/img/team-1.jpg',
     title: 'Stacking & Styling',
-    price: 'From $15',
+    price: 'From Rs. 1,500',
     description: 'Modern hair stacking, volume creation, and textured finish.'
   },
 
@@ -57,7 +57,7 @@ const allServices = [
     iconClass: 'fa fa-crown',
     bgImage: '/img/ladies_bridal.jpg',
     title: 'Bridal Makeup & Styling',
-    price: 'From $85',
+    price: 'From Rs. 8,500',
     description: 'HD Bridal makeup, hair styling, veil draping, touch-up kit, and trial session.'
   },
   {
@@ -65,7 +65,7 @@ const allServices = [
     iconClass: 'fa fa-female',
     bgImage: '/img/ladies_haircut.jpg',
     title: 'Ladies Haircut & Blowdry',
-    price: 'From $25',
+    price: 'From Rs. 2,500',
     description: 'Customized haircut, deep conditioning wash, blowdry, and signature styling.'
   },
   {
@@ -73,7 +73,7 @@ const allServices = [
     iconClass: 'fa fa-magic',
     bgImage: '/img/ladies_makeup.jpg',
     title: 'Party & Event Makeup',
-    price: 'From $45',
+    price: 'From Rs. 4,500',
     description: 'Glamour or subtle party makeup with long-lasting finish and eye lash application.'
   },
   {
@@ -81,7 +81,7 @@ const allServices = [
     iconClass: 'fa fa-spa',
     bgImage: '/img/ladies_facial.jpg',
     title: 'Facial & Glow Care',
-    price: 'From $35',
+    price: 'From Rs. 3,500',
     description: 'Deep pore cleansing, herbal exfoliation, hydrating mask, and face massage.'
   },
   {
@@ -89,7 +89,7 @@ const allServices = [
     iconClass: 'fa fa-paint-brush',
     bgImage: '/img/ladies_haircolor.jpg',
     title: 'Hair Color & Highlights',
-    price: 'From $50',
+    price: 'From Rs. 5,000',
     description: 'Balayage, ombre, global coloring, highlights, and keratin gloss treatment.'
   },
   {
@@ -97,7 +97,7 @@ const allServices = [
     iconClass: 'fa fa-hand-holding-heart',
     bgImage: '/img/ladies_manicure.jpg',
     title: 'Manicure & Pedicure Spa',
-    price: 'From $30',
+    price: 'From Rs. 3,000',
     description: 'Nail shaping, cuticle care, hand & foot scrub, massage, and polish.'
   }
 ];
